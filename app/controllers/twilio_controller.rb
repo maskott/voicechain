@@ -1,5 +1,4 @@
 class TwilioController < ApplicationController
-  include Webhookable
 
   after_filter :set_header
 
