@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root to: 'twilio#voice'
+# root to: 'twilio#voice'
+
+post 'twilio', to: 'twilio#voice'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
