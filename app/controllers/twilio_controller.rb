@@ -4,6 +4,10 @@ class TwilioController < ApplicationController
 
   skip_before_action :verify_authenticity_token
 
+  def index
+    
+  end
+
   def voice
   	response = Twilio::TwiML::Response.new do |r|
   	  r.Say 'Hey there. Congrats on integrating Twilio into your Rails 4 app.', :voice => 'alice'
